@@ -1,12 +1,11 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        String name = "elian.gavilanes@epn.edu.ec";
-        for (int i = 0; i <= name.length(); i++) {
-            System.out.printf("%s%d%s%d", "Loading: ", i, " de ", 26);
-            System.out.println();
+        for (int x = 0; x <=100; x++) {
+            Utilitario.ProgressBar.showProgressBar_e(x, 100);
         }
     }
     /**
      * Un Issue se puede encontar en el uso de los for
+     * ya que el programa funciona sin embargo presenta errores
      */
 }
