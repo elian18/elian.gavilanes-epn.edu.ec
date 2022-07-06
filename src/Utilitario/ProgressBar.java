@@ -3,6 +3,13 @@ package Utilitario;
 import java.io.IOException;
 
 public class ProgressBar {
+    /**
+     * [oooooo\     ]53%  rotate
+     * @param porcentaje
+     * @param delay
+     * @throws InterruptedException
+     * @throws IOException
+     */
 
     public static void showProgressBar_e(int porcentaje,int delay) throws InterruptedException, IOException {
         String sb = new String();
@@ -17,6 +24,7 @@ public class ProgressBar {
             System.out.println(str);
         }
         sb += "]";
+        System.out.print(CMD.RED + "");
             System.out.write(sb.getBytes());
             System.out.printf(" %d %%", porcentaje);
             Thread.sleep(delay);
